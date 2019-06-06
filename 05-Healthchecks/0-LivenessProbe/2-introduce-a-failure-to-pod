@@ -1,0 +1,3 @@
+#!/bin/sh
+
+kubectl exec -it liveness-app -- /bin/kill -s SIGUSR1 1

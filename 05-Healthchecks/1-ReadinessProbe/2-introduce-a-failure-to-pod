@@ -1,0 +1,8 @@
+#!/bin/sh
+
+PODNAME=$(kubectl get pods -l app=readiness-deployment -o json | jq -r ".items[0].metadata.name")
+
+echo "Make $PODNAME failure ..."
+kubectl exec -it $PODNAME -- rm /tmp/healthy
+
+./1-describe-deployment

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+kubectl apply -f liveness-app.yaml
+
+kubectl get pod liveness-app

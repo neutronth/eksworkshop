@@ -1,0 +1,3 @@
+#!/bin/sh
+
+kubectl describe deployment readiness-deployment | grep Replicas:

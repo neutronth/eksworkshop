@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# --previous flag for prvious instantiation of a container logs
+
+kubectl logs liveness-app $@

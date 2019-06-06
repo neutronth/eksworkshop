@@ -1,0 +1,5 @@
+#!/bin/sh
+
+kubectl apply -f readiness-deployment.yaml
+
+kubectl get pods -l app=readiness-deployment
